@@ -3,101 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#171716" />
-  <meta name="description" content="Isabella Assis, graduanda em Engenharia da Computação no Inteli. Conheça meus projetos, minha trajetória e meu jeito de aprender construindo." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Conheça Isabella Assis, graduanda em Engenharia da Computação no Inteli: minha trajetória, conquistas e projetos em dados, sistemas e impacto social." />
   <title>Isabella Assis | Engenharia da Computação</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=3" />
-  <script src="site.js?v=2" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script src="site.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="sidebar">
-    <a class="wordmark" href="#inicio" aria-label="Isabella Assis, início">isabella<span>.</span></a>
-    <p class="sidebar-course">Engenharia <br />da Computação</p>
-    <nav class="navigation" aria-label="Navegação principal">
-      <a href="#projetos" data-nav><span class="nav-number">01</span> Projetos <span class="nav-arrow" aria-hidden="true">↗</span></a>
-      <a href="#sobre" data-nav><span class="nav-number">02</span> Sobre mim <span class="nav-arrow" aria-hidden="true">↗</span></a>
-      <a href="#formacao" data-nav><span class="nav-number">03</span> Percurso <span class="nav-arrow" aria-hidden="true">↗</span></a>
-      <a href="#conhecimentos" data-nav><span class="nav-number">04</span> Repertório <span class="nav-arrow" aria-hidden="true">↗</span></a>
-    </nav>
-    <div class="sidebar-bottom">
-      <p class="availability"><span aria-hidden="true"></span> Aberta a oportunidades</p>
-      <a class="sidebar-contact" href="#contato" data-nav>Vamos conversar <span aria-hidden="true">↗</span></a>
-      <p class="sidebar-location">São Paulo, Brasil</p>
+  <header id="inicio" class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#sobre" aria-label="Isabella Assis, início">isabella<span>assis.</span></a>
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="#sobre" data-nav>Sobre mim</a>
+        <a href="#formacao" data-nav>Meu percurso</a>
+        <a href="#projetos" data-nav>Projetos</a>
+        <a href="#conhecimentos" data-nav>Repertório</a>
+      </nav>
+      <a class="header-contact" href="#contato" data-nav>Contato <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main id="conteudo">
-    <section id="inicio" class="hero content-width" aria-labelledby="nome">
-      <div class="hero-meta mono"><span>Um pouco de quem eu sou</span><span>Portfólio / 2026</span></div>
-      <div class="hero-body">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> Pessoas, ideias e tecnologia.</p>
-          <h1 id="nome">Isabella<br /><em>Assis.</em></h1>
-          <p class="hero-course">Graduanda em<br /><strong>Engenharia da Computação.</strong></p>
-          <p class="hero-description">Aprendo construindo. Entre programação, dados e projetos em equipe, busco criar tecnologia que faça sentido para as pessoas.</p>
-          <a class="text-link hero-link" href="#projetos">Explore meus projetos <span class="round-arrow" aria-hidden="true">↘</span></a>
-        </div>
-        <figure class="portrait">
-          <div class="portrait-frame">
-            <img src="assets/foto-perfil.jpeg" alt="Isabella Assis, de braços cruzados" width="1023" height="1537" fetchpriority="high" />
-            <span class="portrait-note" aria-hidden="true">prazer, Isabella!</span>
+    <section id="sobre" class="about section" aria-labelledby="nome">
+      <div class="content-width">
+        <div class="about-grid">
+          <div class="about-copy">
+            <div class="about-heading">
+            <p class="section-label">Sobre mim</p>
+            <h1 id="nome">Oi, eu sou a<br /><span>Isabella Assis.</span></h1>
+            <p class="course-badge">Engenharia da Computação <span>· Inteli</span></p>
+            </div>
+            <div class="about-story">
+            <p class="about-lead">Gosto de entender como as coisas funcionam e transformar ideias em soluções que ajudam pessoas.</p>
+            <p>Sou Isabella Cristhini Ferreira de Assis, graduanda no Inteli. Aprendo com projetos, trabalho em equipe e problemas reais. Meus interesses passam por programação, dados e inteligência artificial.</p>
+            <p>Organização, iniciativa e colaboração fazem parte do meu jeito de trabalhar. Quero continuar aprendendo e construir tecnologia com impacto positivo.</p>
+            </div>
+            <div class="about-actions"><a class="button button-primary" href="#formacao">Conheça meu percurso <span aria-hidden="true">↓</span></a><a class="button button-outline" href="#projetos">Ver projetos <span aria-hidden="true">↗</span></a></div>
           </div>
-          <figcaption><span class="mono">Em formação, sempre.</span><span>Inteli · São Paulo</span></figcaption>
-        </figure>
+          <figure class="portrait">
+            <div class="portrait-frame"><img src="assets/foto-perfil.jpeg" alt="Isabella Assis, de braços cruzados" width="1023" height="1537" fetchpriority="high" /></div>
+            <figcaption><span>São Paulo, SP</span><strong>Em formação no Inteli.</strong></figcaption>
+          </figure>
+        </div>
+        <div class="about-bottom"><div><h2>Além da sala de aula</h2><p>Espaços de troca, diversidade, pesquisa e colaboração.</p></div><ul class="communities"><li>Inteli Grace Hopper</li><li>Inteli Turing</li></ul><p class="availability"><span aria-hidden="true"></span> Aberta a oportunidades</p></div>
       </div>
-      <div class="hero-bottom"><span class="mono">Curiosidade como ponto de partida.</span><a href="#projetos" aria-label="Continuar para os projetos">Continue explorando <span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <section id="projetos" class="section projects" aria-labelledby="titulo-projetos">
+    <section id="formacao" class="journey section" aria-labelledby="titulo-percurso">
       <div class="content-width">
-        <div class="section-heading">
-          <div><p class="section-index mono">01 / Projetos selecionados</p><h2 id="titulo-projetos">Aprender,<br /><em>fazendo.</em></h2></div>
-          <p class="section-intro">Desafios reais, trabalho em equipe e espaço para experimentar. Aqui estão alguns projetos que fazem parte da minha trajetória.</p>
-        </div>
-        <div class="project-list">
-          <article id="projeto-ldc" class="project">
-            <div class="project-visual project-visual-ldc">
-              <span class="project-number mono" aria-hidden="true">01 /</span>
-              <img src="assets/projeto-ldc.png" alt="LDC — Louis Dreyfus Company" width="622" height="321" loading="lazy" />
-              <span class="image-caption mono">Dados e inteligência para o agronegócio</span>
-            </div>
-            <div class="project-content">
-              <p class="project-partner mono">LDC <span>· Louis Dreyfus Company</span></p>
-              <h3>Dados do campo.<br /><em>Visão para o futuro.</em></h3>
-              <p>Análise de dados e Machine Learning para prever a produção de proteínas de origem animal no Brasil e, a partir dessas previsões, estimar a demanda futura por ração, soja e seus derivados.</p>
-              <ul class="project-tags" aria-label="Focos do projeto"><li>Machine Learning</li><li>Análise de dados</li><li>Agronegócio</li></ul>
-              <details class="project-details">
-                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+        <div class="section-heading"><div><p class="section-label">Minha trajetória</p><h2 id="titulo-percurso">Meu percurso.</h2></div><p>Da formação no Colégio Embraer à Engenharia da Computação no Inteli. Cada etapa faz parte de quem sou.</p></div>
+        <ol class="education-list">
+          <li class="education-item"><div class="education-meta"><span>2026 — Atual</span><span class="education-status">Em andamento</span></div><h3 class="education-name">Inteli</h3><p class="education-institution">Instituto de Tecnologia e Liderança</p><p class="education-program">Engenharia da Computação</p><p class="education-description">Graduação baseada em projetos, com programação, desenvolvimento de sistemas, lógica e resolução de problemas reais.</p></li>
+          <li class="education-item education-school"><div class="education-meta"><span>2023 — 2025</span><span class="education-status">Concluído</span></div><h3 class="education-name">Colégio Embraer<br /><span>Juarez Wanderley</span></h3><p class="education-program">Ensino Médio</p><p class="education-description">Uma etapa de dedicação aos estudos, participação em projetos e preparação para seguir na área de tecnologia.</p></li>
+        </ol>
+        <article class="hackathon-recognition" aria-labelledby="titulo-hackathon">
+          <figure class="hackathon-photo"><img src="assets/hackathon-elas-conectam.jpeg" alt="Participantes com os troféus e certificados de segundo lugar no Elas Conectam" width="1600" height="900" loading="lazy" /></figure>
+          <div class="hackathon-copy"><p class="achievement-label">Uma conquista em equipe</p><p class="hackathon-place">2º <span>lugar</span></p><h3 id="titulo-hackathon">Hackathon Elas Conectam</h3><p>Fui finalista e conquistei o segundo lugar no hackathon Elas Conectam. Uma experiência de colaboração, criatividade e aplicação da tecnologia a desafios reais.</p></div>
+        </article>
+        <div class="recognition"><div class="recognition-title"><p class="section-label">Conquistas em matemática</p><h3>Matemática Sem Fronteiras</h3><p>Olimpíada Internacional · OIMSF</p></div><ul class="award-list" aria-label="Medalhas na Olimpíada Internacional Matemática Sem Fronteiras"><li><span>2025</span><strong>Diamante</strong></li><li><span>2024</span><strong>Ouro</strong></li><li><span>2023</span><strong>Prata</strong></li></ul></div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects section" aria-labelledby="titulo-projetos">
+      <div class="content-width">
+        <div class="section-heading"><div><p class="section-label">Tecnologia na prática</p><h2 id="titulo-projetos">Conheça meus projetos.</h2></div><p>O que cada trabalho busca resolver, como a solução foi pensada e por que ela importa.</p></div>
+        <p class="project-instruction" hidden>Escolha um projeto para explorar <span aria-hidden="true">↓</span></p>
+        <div class="project-explorer">
+          <div class="project-tabs" aria-label="Escolher projeto" hidden>
+              <button id="tab-projeto-ldc" class="project-tab" type="button" data-project="projeto-ldc"><span class="tab-index">01</span><span><strong>LDC</strong><small>Dados & Machine Learning</small></span><span class="tab-arrow" aria-hidden="true">→</span></button>
+              <button id="tab-projeto-lar-das-delicias" class="project-tab" type="button" data-project="projeto-lar-das-delicias"><span class="tab-index">02</span><span><strong>Lar das Delícias</strong><small>Gestão & atendimento</small></span><span class="tab-arrow" aria-hidden="true">→</span></button>
+              <button id="tab-projeto-cobasi" class="project-tab" type="button" data-project="projeto-cobasi"><span class="tab-index">03</span><span><strong>Cobasi</strong><small>Experiência digital</small></span><span class="tab-arrow" aria-hidden="true">→</span></button>
+              <button id="tab-projeto-defesa-civil" class="project-tab" type="button" data-project="projeto-defesa-civil"><span class="tab-index">04</span><span><strong>Defesa Civil</strong><small>Monitoramento de dados</small></span><span class="tab-arrow" aria-hidden="true">→</span></button>
+              <button id="tab-projeto-fundacao-bb" class="project-tab" type="button" data-project="projeto-fundacao-bb"><span class="tab-index">05</span><span><strong>Fundação BB</strong><small>Energia & impacto social</small></span><span class="tab-arrow" aria-hidden="true">→</span></button>
+          </div>
+          <div class="project-list">
+              <article id="projeto-ldc" class="project" data-project-panel>
+                <div class="project-heading"><p class="project-partner">LDC · Louis Dreyfus Company</p><span class="project-category">Dados & Machine Learning</span></div>
+                <div class="project-layout">
+                  <figure class="project-visual project-visual-ldc"><img src="assets/projeto-ldc.png" alt="LDC — Louis Dreyfus Company" width="622" height="321" loading="lazy" /><figcaption>Análise de dados para o agronegócio</figcaption></figure>
+                  <div class="project-content">
+                    <h3>Prever a produção animal para estimar a demanda por ração.</h3>
+                    <p class="project-intro">Projeto em parceria com a Louis Dreyfus Company para apoiar o planejamento de commodities agrícolas no Brasil.</p>
+                    <dl class="project-facts"><div><dt>O desafio</dt><dd>Dados anuais dificultam entender as variações da produção de proteína animal ao longo dos meses.</dd></div><div><dt>A solução proposta</dt><dd>Modelos de Machine Learning com dados históricos e variáveis econômicas de aves, suínos, bovinos, ovos e leite.</dd></div></dl>
+                    <p class="project-objective"><strong>Objetivo:</strong> Antecipar a necessidade de ração, soja e seus derivados para apoiar decisões estratégicas.</p>
+                  </div>
+                </div>
+                <details class="project-details">
+                <summary>Leia o projeto completo <span aria-hidden="true">+</span></summary>
                 <div class="details-body">
                   <p><strong>O desafio</strong> Apoiar o planejamento estratégico da LDC, que comercializa commodities agrícolas e precisa antecipar o comportamento do mercado de proteína animal. Muitas informações estão disponíveis apenas em dados anuais, dificultando a análise das variações ao longo dos meses.</p>
                   <p><strong>A solução</strong> Utilizar variáveis econômicas e informações históricas do setor para construir modelos de previsão da produção de aves, suínos, bovinos, ovos e leite. A partir dessas estimativas, a solução busca projetar o consumo de ração e a necessidade de matérias-primas da alimentação animal.</p>
                   <p><strong>Minha experiência</strong> Atuação desde a pesquisa e a organização dos dados até o desenvolvimento da proposta de solução, conectando programação, análise de dados e inteligência artificial às necessidades reais do negócio.</p>
                 </div>
               </details>
-            </div>
-          </article>
+              </article>
 
-          <article id="projeto-lar-das-delicias" class="project project-reversed">
-            <div class="project-visual">
-              <span class="project-number mono" aria-hidden="true">02 /</span>
-              <div class="delicias-cover" role="img" aria-label="Lar das Delícias: alimentação inclusiva e organização do negócio">
-                <span class="mono">Alimentação inclusiva</span>
-                <p>Lar das<br /><em>Delícias.</em></p>
-                <div class="delicias-cover-services" aria-hidden="true"><span>Pedidos</span><span>Estoque</span><span>Financeiro</span></div>
-              </div>
-              <span class="image-caption mono">Tecnologia para quem empreende</span>
-            </div>
-            <div class="project-content">
-              <p class="project-partner mono">Lar das Delícias <span>· Gestão de um pequeno negócio</span></p>
-              <h3>Menos tarefas.<br /><em>Mais autonomia.</em></h3>
-              <p>Uma proposta de sistema integrado para organizar a gestão e o atendimento do negócio de alimentação inclusiva da empreendedora Jociara, centralizando pedidos, entregas, estoque, clientes e finanças.</p>
-              <ul class="project-tags" aria-label="Focos do projeto"><li>Gestão integrada</li><li>Empreendedorismo</li><li>Alimentação inclusiva</li></ul>
-              <details class="project-details">
-                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+              <article id="projeto-lar-das-delicias" class="project" data-project-panel>
+                <div class="project-heading"><p class="project-partner">Lar das Delícias</p><span class="project-category">Gestão & atendimento</span></div>
+                <div class="project-layout">
+                  <figure class="project-visual project-visual-delicias"><div class="delicias-cover" role="img" aria-label="Lar das Delícias: alimentação inclusiva"><span>Alimentação inclusiva</span><strong>Lar das<br />Delícias.</strong><span>Pedidos · Estoque · Financeiro</span></div><figcaption>Tecnologia para pequenos negócios</figcaption></figure>
+                  <div class="project-content">
+                    <h3>Reunir pedidos, estoque e finanças em um único sistema.</h3>
+                    <p class="project-intro">Proposta de gestão para o negócio de alimentação inclusiva da empreendedora Jociara.</p>
+                    <dl class="project-facts"><div><dt>O desafio</dt><dd>Registros em diferentes cadernos e atendimento manual pelo WhatsApp consomem tempo e dificultam a organização.</dd></div><div><dt>A solução proposta</dt><dd>Centralizar clientes, pedidos, entregas, estoque e movimentações financeiras em um sistema integrado.</dd></div></dl>
+                    <p class="project-objective"><strong>Objetivo:</strong> Reduzir tarefas manuais e dar mais autonomia para administrar e expandir o negócio.</p>
+                  </div>
+                </div>
+                <details class="project-details">
+                <summary>Leia o projeto completo <span aria-hidden="true">+</span></summary>
                 <div class="details-body">
                   <p><strong>O contexto</strong> Criado em 2016, o Lar das Delícias passou a oferecer alimentos inclusivos, sem leite, glúten e ovo. Jociara trabalha principalmente de casa e administra grande parte das atividades praticamente sozinha.</p>
                   <p><strong>O desafio</strong> Informações de pedidos, entregas, estoque, clientes, receitas, pagamentos, custos e lucros estavam distribuídas em diferentes cadernos. O atendimento pelo WhatsApp, os orçamentos e as dúvidas frequentes também consumiam muito tempo da empreendedora.</p>
@@ -105,135 +122,91 @@
                   <p><strong>O propósito</strong> Reduzir o trabalho manual e otimizar o tempo de Jociara, respeitando a realidade de um pequeno negócio e oferecendo mais autonomia para administrar e expandir o Lar das Delícias.</p>
                 </div>
               </details>
-            </div>
-          </article>
+              </article>
 
-          <article class="project">
-            <div class="project-visual">
-              <span class="project-number mono" aria-hidden="true">03 /</span>
-              <img src="assets/projeto-cobasi.png" alt="Loja Cobasi, com a identidade visual da empresa" width="1225" height="692" loading="lazy" />
-              <span class="image-caption mono">Experiência digital</span>
-            </div>
-            <div class="project-content">
-              <p class="project-partner mono">Cobasi <span>· Projeto acadêmico</span></p>
-              <h3>Mais cuidado.<br /><em>Menos distância.</em></h3>
-              <p>Uma solução digital para aproximar clientes das informações e dos serviços relacionados ao cuidado animal, com foco em organização e acessibilidade.</p>
-              <ul class="project-tags" aria-label="Focos do projeto"><li>Experiência do usuário</li><li>Acessibilidade</li></ul>
-              <details class="project-details">
-                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+              <article id="projeto-cobasi" class="project" data-project-panel>
+                <div class="project-heading"><p class="project-partner">Cobasi</p><span class="project-category">Experiência digital</span></div>
+                <div class="project-layout">
+                  <figure class="project-visual project-visual-cobasi"><img src="assets/projeto-cobasi.png" alt="Loja Cobasi, com a identidade visual da empresa" width="1225" height="692" loading="lazy" /><figcaption>Organização e acessibilidade</figcaption></figure>
+                  <div class="project-content">
+                    <h3>Facilitar o acesso a informações e serviços para pets.</h3>
+                    <p class="project-intro">Projeto acadêmico voltado à experiência digital dos clientes da Cobasi.</p>
+                    <dl class="project-facts"><div><dt>O desafio</dt><dd>Organizar o acesso às informações sobre produtos, serviços e cuidados com os animais.</dd></div><div><dt>A solução proposta</dt><dd>Uma plataforma digital que reúne informações e facilita o atendimento, com foco em acessibilidade.</dd></div></dl>
+                    <p class="project-objective"><strong>Objetivo:</strong> Tornar a experiência mais prática e intuitiva para quem cuida de pets.</p>
+                  </div>
+                </div>
+                <details class="project-details">
+                <summary>Leia o projeto completo <span aria-hidden="true">+</span></summary>
                 <div class="details-body">
                   <p><strong>O desafio</strong> Centralizar informações e criar uma experiência prática para quem busca serviços, produtos e acompanhamento para seus pets.</p>
                   <p><strong>A solução</strong> Uma plataforma digital que organiza as informações e facilita o acesso aos serviços, tornando a experiência mais intuitiva para os usuários.</p>
                 </div>
               </details>
-            </div>
-          </article>
-          <article class="project project-reversed">
-            <div class="project-visual">
-              <span class="project-number mono" aria-hidden="true">04 /</span>
-              <img src="assets/projeto-defesa-civil.png" alt="Central de monitoramento e símbolo da Defesa Civil de Santo André" width="1247" height="681" loading="lazy" />
-              <span class="image-caption mono">Dados para agir</span>
-            </div>
-            <div class="project-content">
-              <p class="project-partner mono">Defesa Civil <span>· Projeto acadêmico</span></p>
-              <h3>Informação clara.<br /><em>Decisões melhores.</em></h3>
-              <p>Uma aplicação web para centralizar e acompanhar dados, apoiar ações preventivas e facilitar a tomada de decisões em situações de risco.</p>
-              <ul class="project-tags" aria-label="Focos do projeto"><li>Aplicação web</li><li>Visualização de dados</li></ul>
-              <details class="project-details">
-                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+              </article>
+
+              <article id="projeto-defesa-civil" class="project" data-project-panel>
+                <div class="project-heading"><p class="project-partner">Defesa Civil</p><span class="project-category">Monitoramento de dados</span></div>
+                <div class="project-layout">
+                  <figure class="project-visual project-visual-defesa"><img src="assets/projeto-defesa-civil.png" alt="Central de monitoramento da Defesa Civil de Santo André" width="1247" height="681" loading="lazy" /><figcaption>Informação para apoiar decisões</figcaption></figure>
+                  <div class="project-content">
+                    <h3>Centralizar dados para apoiar a prevenção de riscos.</h3>
+                    <p class="project-intro">Aplicação web para organizar informações e apoiar a atuação da Defesa Civil.</p>
+                    <dl class="project-facts"><div><dt>O desafio</dt><dd>Acessar rapidamente os dados necessários para acompanhar ocorrências e situações de emergência.</dd></div><div><dt>A solução proposta</dt><dd>Uma plataforma para centralizar dados, visualizar ocorrências e facilitar a comunicação entre equipes.</dd></div></dl>
+                    <p class="project-objective"><strong>Objetivo:</strong> Apoiar ações preventivas e decisões em situações de risco.</p>
+                  </div>
+                </div>
+                <details class="project-details">
+                <summary>Leia o projeto completo <span aria-hidden="true">+</span></summary>
                 <div class="details-body">
                   <p><strong>O desafio</strong> Acessar rapidamente as informações necessárias para monitorar ocorrências e gerenciar situações de emergência.</p>
                   <p><strong>A solução</strong> Uma plataforma para centralizar dados e acompanhar informações em tempo real, facilitando a visualização de ocorrências e a comunicação entre equipes.</p>
                 </div>
               </details>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual project-visual-foundation">
-              <span class="project-number mono" aria-hidden="true">05 /</span>
-              <img src="assets/projeto-fundacao-bb.png" alt="Identidade visual da Fundação Banco do Brasil" width="621" height="365" loading="lazy" />
-              <span class="image-caption mono">Tecnologia com impacto social</span>
-            </div>
-            <div class="project-content">
-              <p class="project-partner mono">Fundação Banco do Brasil <span>· Projeto acadêmico</span></p>
-              <h3>Energia solar.<br /><em>Mais possibilidades.</em></h3>
-              <p>Aquecedores Solares de Baixo Custo para entidades beneficentes em situação de vulnerabilidade socioeconômica, unindo sustentabilidade e redução de custos energéticos.</p>
-              <ul class="project-tags" aria-label="Focos do projeto"><li>Sustentabilidade</li><li>Impacto social</li></ul>
-              <details class="project-details">
-                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+              </article>
+
+              <article id="projeto-fundacao-bb" class="project" data-project-panel>
+                <div class="project-heading"><p class="project-partner">Fundação BB · Fundação Banco do Brasil</p><span class="project-category">Energia & impacto social</span></div>
+                <div class="project-layout">
+                  <figure class="project-visual project-visual-fundacao"><img src="assets/projeto-fundacao-bb.png" alt="Fundação Banco do Brasil" width="621" height="365" loading="lazy" /><figcaption>Soluções acessíveis e sustentáveis</figcaption></figure>
+                  <div class="project-content">
+                    <h3>Usar energia solar para reduzir custos de entidades beneficentes.</h3>
+                    <p class="project-intro">Projeto com a Fundação Banco do Brasil voltado a instituições em situação de vulnerabilidade socioeconômica.</p>
+                    <dl class="project-facts"><div><dt>O desafio</dt><dd>Diminuir os gastos com energia elétrica para preservar recursos destinados ao atendimento das comunidades.</dd></div><div><dt>A solução proposta</dt><dd>Desenvolver e distribuir Aquecedores Solares de Baixo Custo, com mecanismos simples e materiais acessíveis.</dd></div></dl>
+                    <p class="project-objective"><strong>Objetivo:</strong> Promover sustentabilidade e ampliar a autonomia financeira das entidades.</p>
+                  </div>
+                </div>
+                <details class="project-details">
+                <summary>Leia o projeto completo <span aria-hidden="true">+</span></summary>
                 <div class="details-body">
                   <p><strong>O desafio</strong> Reduzir os gastos com energia elétrica de instituições de baixa renda, preservando recursos para o atendimento às comunidades.</p>
                   <p><strong>A solução</strong> Desenvolver e distribuir equipamentos de energia solar térmica com mecanismos simples e materiais acessíveis, ampliando a autonomia financeira das entidades atendidas.</p>
                 </div>
               </details>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="section about" aria-labelledby="titulo-sobre">
-      <div class="content-width about-layout">
-        <div class="about-heading"><p class="section-index mono">02 / Além dos projetos</p><h2 id="titulo-sobre">A pessoa<br /><em>por trás.</em></h2><span class="about-asterisk" aria-hidden="true">✳</span></div>
-        <div class="about-copy">
-          <p class="about-lead">Sou Isabella Cristhini Ferreira de Assis, estudante de <strong>Engenharia da Computação no Inteli</strong> e uma pessoa movida pela vontade de aprender.</p>
-          <p>Gosto de conectar ideias, entender problemas e construir soluções junto com outras pessoas. Na tecnologia, encontrei um espaço para unir raciocínio, criatividade e o desejo de gerar impacto positivo.</p>
-          <p>Minha formação acontece também na prática: em projetos, conversas e desafios que me ajudam a desenvolver lógica, comunicação e trabalho em equipe. Sou organizada, proativa e acredito que sempre existe algo novo para aprender.</p>
-          <div class="communities">
-            <h3 class="mono">Também faço parte</h3>
-            <ul><li>Inteli Grace Hopper</li><li>Inteli Turing</li></ul>
-            <p>Espaços de troca, diversidade, pesquisa e desenvolvimento dentro da tecnologia.</p>
+              </article>
           </div>
         </div>
+        <p class="project-status" role="status" aria-live="polite"></p>
       </div>
     </section>
 
-    <section id="formacao" class="section journey" aria-labelledby="titulo-percurso">
+    <section id="conhecimentos" class="toolkit section" aria-labelledby="titulo-repertorio">
       <div class="content-width">
-        <div class="section-heading"><div><p class="section-index mono">03 / Meu percurso</p><h2 id="titulo-percurso">Tudo começa<br /><em>com curiosidade.</em></h2></div><p class="section-intro">Os lugares e as experiências que vêm construindo meu jeito de pensar.</p></div>
-        <div class="timeline">
-          <article class="timeline-item"><p class="timeline-date mono">2026 — Atual<span class="timeline-dot" aria-hidden="true"></span></p><div><p class="timeline-institution mono">Instituto de Tecnologia e Liderança · Inteli</p><h3>Engenharia da Computação</h3><p>Graduação baseada em projetos, com foco em programação, desenvolvimento de sistemas, lógica, inovação e resolução de problemas reais.</p></div><span class="timeline-label mono">Em andamento</span></article>
-          <article class="timeline-item"><p class="timeline-date mono">2023 — 2025<span class="timeline-dot" aria-hidden="true"></span></p><div><p class="timeline-institution mono">Colégio Embraer Juarez Wanderley</p><h3>Ensino Médio</h3><p>Uma etapa de dedicação aos estudos, participação em projetos e preparação para seguir na área de tecnologia.</p></div><span class="timeline-label mono">Concluído</span></article>
-        </div>
-        <article class="hackathon-recognition" aria-labelledby="titulo-hackathon">
-          <figure class="hackathon-photo">
-            <img src="assets/hackathon-elas-conectam.jpeg" alt="Registro da premiação com as participantes, os troféus e os certificados de segundo lugar no Elas Conectam" width="1600" height="900" loading="lazy" />
-            <figcaption class="mono">Uma conquista para guardar.</figcaption>
-          </figure>
-          <div class="hackathon-copy">
-            <p class="section-index mono">Finalista · Hackathon Elas Conectam</p>
-            <p class="hackathon-place">2º <span class="mono">lugar</span></p>
-            <h3 id="titulo-hackathon">Ideias que chegam<br /><em>mais longe.</em></h3>
-            <p>Fui finalista e conquistei o segundo lugar no hackathon Elas Conectam. Uma experiência de colaboração, criatividade e aplicação da tecnologia a desafios reais.</p>
-          </div>
-        </article>
-        <div class="recognition"><div class="recognition-title"><span class="recognition-icon" aria-hidden="true">✧</span><h3>Matemática <br />Sem Fronteiras</h3><p>Olimpíada Internacional · OIMSF</p></div><ul class="award-list" aria-label="Medalhas na Olimpíada Internacional Matemática Sem Fronteiras"><li><span class="mono">2025</span><strong>Diamante</strong></li><li><span class="mono">2024</span><strong>Ouro</strong></li><li><span class="mono">2023</span><strong>Prata</strong></li></ul></div>
-      </div>
-    </section>
-
-    <section id="conhecimentos" class="section toolkit" aria-labelledby="titulo-repertorio">
-      <div class="content-width">
-        <div class="section-heading"><div><p class="section-index mono">04 / Em constante aprendizado</p><h2 id="titulo-repertorio">Meu<br /><em>repertório.</em></h2></div><p class="section-intro">Ferramentas e habilidades que desenvolvo durante a graduação e nos projetos.</p></div>
+        <div class="section-heading"><div><p class="section-label">Em constante aprendizado</p><h2 id="titulo-repertorio">Meu repertório.</h2></div><p>Ferramentas e habilidades que desenvolvo durante a graduação e nos projetos.</p></div>
         <div class="skill-groups">
-          <div class="skill-group"><h3><span class="mono">01</span> Desenvolvimento</h3><ul><li><span>HTML &amp; CSS</span><small>Avançado</small></li><li><span>JavaScript</span><small>Intermediário</small></li><li><span>Node.js</span><small>Básico</small></li><li><span>Phaser.js</span><small>Intermediário</small></li></ul></div>
-          <div class="skill-group"><h3><span class="mono">02</span> Dados &amp; IA</h3><ul><li><span>Python</span><small>Intermediário</small></li><li><span>PostgreSQL</span><small>Básico</small></li><li><span>Inteligência Artificial</span><small>Básico</small></li></ul></div>
-          <div class="skill-group"><h3><span class="mono">03</span> Colaboração &amp; criação</h3><ul><li><span>Comunicação</span><small>Intermediário</small></li><li><span>Organização</span><small>Avançado</small></li><li><span>Resolução de problemas</span><small>Intermediário</small></li><li><span>Inovação</span><small>Intermediário</small></li><li><span>Transformação digital</span><small>Básico</small></li></ul></div>
-          <div class="skill-group"><h3><span class="mono">04</span> Idiomas</h3><ul><li><span>Português</span><small>Nativo</small></li><li><span>Inglês</span><small>Básico</small></li></ul></div>
+          <div class="skill-group"><h3>Desenvolvimento</h3><ul><li><span>HTML &amp; CSS</span><small>Avançado</small></li><li><span>JavaScript</span><small>Intermediário</small></li><li><span>Node.js</span><small>Básico</small></li><li><span>Phaser.js</span><small>Intermediário</small></li></ul></div>
+          <div class="skill-group"><h3>Dados &amp; IA</h3><ul><li><span>Python</span><small>Intermediário</small></li><li><span>PostgreSQL</span><small>Básico</small></li><li><span>Inteligência Artificial</span><small>Básico</small></li></ul></div>
+          <div class="skill-group"><h3>Colaboração &amp; criação</h3><ul><li><span>Comunicação</span><small>Intermediário</small></li><li><span>Organização</span><small>Avançado</small></li><li><span>Resolução de problemas</span><small>Intermediário</small></li><li><span>Inovação</span><small>Intermediário</small></li><li><span>Transformação digital</span><small>Básico</small></li></ul></div>
+          <div class="skill-group"><h3>Idiomas</h3><ul><li><span>Português</span><small>Nativo</small></li><li><span>Inglês</span><small>Básico</small></li></ul></div>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section contact" aria-labelledby="titulo-contato">
+    <section id="contato" class="contact section" aria-labelledby="titulo-contato">
       <div class="content-width">
-        <p class="section-index mono">Uma conversa pode ser o começo.</p>
-        <div class="contact-heading"><h2 id="titulo-contato">Vamos criar<br /><em>algo juntos?</em></h2><span class="contact-arrow" aria-hidden="true">↗</span></div>
-        <p class="contact-intro">Estou aberta a oportunidades, projetos e novas conexões. Me conta o que você tem em mente.</p>
-        <div class="contact-links">
-          <div class="contact-row"><a href="mailto:isabellacristhini57@gmail.com"><span class="mono contact-label">E-mail</span><span class="contact-address">isabellacristhini57@gmail.com</span><span aria-hidden="true">↗</span></a><button class="copy-email" type="button" hidden>Copiar e-mail</button></div>
-          <div class="contact-row"><a href="https://www.linkedin.com/in/isabellaaassis" target="_blank" rel="noopener noreferrer"><span class="mono contact-label">LinkedIn</span><span class="contact-address">Vamos nos conectar</span><span aria-hidden="true">↗</span></a></div>
-        </div>
+        <div class="contact-heading"><div><p class="section-label">Próximo passo</p><h2 id="titulo-contato">Vamos conversar?</h2></div><p>Estou aberta a oportunidades, projetos e novas conexões. Me conta o que você tem em mente.</p></div>
+        <div class="contact-links"><div class="contact-row"><a href="mailto:isabellacristhini57@gmail.com"><span class="contact-label">E-mail</span><span class="contact-address">isabellacristhini57@gmail.com</span><span aria-hidden="true">↗</span></a><button class="copy-email" type="button" hidden>Copiar e-mail</button></div><div class="contact-row"><a href="https://www.linkedin.com/in/isabellaaassis" target="_blank" rel="noopener noreferrer"><span class="contact-label">LinkedIn</span><span class="contact-address">Vamos nos conectar</span><span aria-hidden="true">↗</span></a></div></div>
         <p class="copy-status" role="status" aria-live="polite"></p>
-        <footer class="footer"><p>© 2026 Isabella Cristhini Ferreira de Assis</p><a href="#inicio">De volta ao começo <span aria-hidden="true">↑</span></a></footer>
+        <footer class="footer"><p>© 2026 Isabella Cristhini Ferreira de Assis</p><a href="#sobre">Voltar ao início <span aria-hidden="true">↑</span></a></footer>
       </div>
     </section>
   </main>
