@@ -68,13 +68,22 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 .portrait-frame img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 3px; }
 .portrait figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 18px 5px 0; font-size: 13px; color: var(--muted); }
 .portrait figcaption strong { color: white; font-weight: 600; }
-.about-bottom { display: flex; align-items: center; gap: 30px; margin-top: 58px; padding-block: 28px; border-top: 1px solid var(--line); }
+.about-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 24px 30px; margin-top: 58px; padding-block: 28px; border-top: 1px solid var(--line); }
 .about-bottom h2 { font-family: var(--sans); font-size: 16px; font-weight: 700; letter-spacing: -.02em; }
 .about-bottom > div p { color: var(--muted); font-size: 13px; margin-top: 4px; }
-.communities { display: flex; flex-wrap: wrap; gap: 8px; }
-.communities li { background: var(--surface-deep); border-radius: 7px; color: white; font-size: 12px; font-weight: 600; padding: 7px 12px; }
-.communities .community-sports { background: var(--accent); color: var(--canvas); }
-.availability { margin-left: auto; display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; white-space: nowrap; }
+.communities { grid-column: 1 / -1; grid-row: 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.communities li { min-width: 0; background: var(--surface-deep); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); }
+.community-details summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 12px 16px; border-radius: 9px; cursor: pointer; list-style: none; font-size: 13px; font-weight: 700; }
+.community-details summary::-webkit-details-marker { display: none; }
+.community-details summary:hover { background: var(--accent-soft); color: var(--accent-hover); }
+.community-details summary > span { flex-shrink: 0; font-size: 22px; line-height: 1; transition: transform .2s; }
+.community-details[open] summary { border-radius: 9px 9px 0 0; }
+.community-details[open] summary > span { transform: rotate(45deg); }
+.community-description { padding: 4px 16px 16px; color: var(--muted); font-size: 13px; }
+.community-sports summary { background: var(--accent); color: var(--canvas); }
+.community-sports summary:hover { background: var(--accent-hover); color: var(--canvas); }
+.community-sports .community-description { padding-top: 14px; }
+.availability { grid-column: 2; grid-row: 1; margin-left: auto; display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; white-space: nowrap; }
 .availability > span { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
 
 .journey { background: var(--surface); color: white; }
@@ -187,7 +196,7 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 
 @media (max-width: 1100px) {
   .about-grid { gap: 48px; }
-  .about-bottom { flex-wrap: wrap; gap: 22px 30px; }
+  .about-bottom { gap: 22px 30px; }
   .availability { margin-left: 0; }
   .section-heading { gap: 32px; }
   .section-heading > p { max-width: 300px; }
@@ -240,7 +249,7 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 }
 @media (max-width: 620px) {
   .content-width, .header-inner { width: calc(100% - 44px); }
-  .wordmark { font-size: 23px; }
+  .wordmark { font-size: 21px; gap: 3px; }
   .navigation { gap: 6px; }
   .navigation a { font-size: 11px; }
   .section { padding-block: 52px; }
@@ -260,7 +269,9 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
   .button { font-size: 13px; padding-inline: 14px; }
   .portrait { order: 1; width: calc(100% - 28px); max-width: 280px; margin-right: 0; justify-self: center; }
   .portrait figcaption { font-size: 12px; }
-  .about-bottom { display: grid; gap: 18px; margin-top: 32px; padding-block: 26px; }
+  .about-bottom { grid-template-columns: minmax(0, 1fr); gap: 18px; margin-top: 32px; padding-block: 26px; }
+  .communities { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .availability { grid-column: 1; grid-row: 3; }
   .education-list { grid-template-columns: 1fr; gap: 18px; }
   .education-item { padding: 24px; }
   .education-name { font-size: 34px; }
