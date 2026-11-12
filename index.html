@@ -3,244 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isabella Assis | Portfólio</title>
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <meta name="theme-color" content="#171716" />
+  <meta name="description" content="Isabella Assis, graduanda em Engenharia da Computação no Inteli. Conheça meus projetos, minha trajetória e meu jeito de aprender construindo." />
+  <title>Isabella Assis | Engenharia da Computação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <script src="site.js?v=2" defer></script>
 </head>
-
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="#inicio" class="logo">Portfólio</a>
-
-      <ul class="nav-menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#conhecimentos">Conhecimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="sidebar">
+    <a class="wordmark" href="#inicio" aria-label="Isabella Assis, início">isabella<span>.</span></a>
+    <p class="sidebar-course">Engenharia<br />da Computação</p>
+    <nav class="navigation" aria-label="Navegação principal">
+      <a href="#projetos" data-nav><span class="nav-number">01</span> Projetos <span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a href="#sobre" data-nav><span class="nav-number">02</span> Sobre mim <span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a href="#formacao" data-nav><span class="nav-number">03</span> Percurso <span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a href="#conhecimentos" data-nav><span class="nav-number">04</span> Repertório <span class="nav-arrow" aria-hidden="true">↗</span></a>
     </nav>
+    <div class="sidebar-bottom">
+      <p class="availability"><span aria-hidden="true"></span> Aberta a oportunidades</p>
+      <a class="sidebar-contact" href="#contato" data-nav>Vamos conversar <span aria-hidden="true">↗</span></a>
+      <p class="sidebar-location">São Paulo, Brasil</p>
+    </div>
   </header>
 
-  <main>
-    <!-- INÍCIO -->
-    <section id="inicio" class="hero section">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <p class="location">São Paulo, SP</p>
-
-          <h1>
-            Isabella Cristhini<br />
-            <span>Ferreira de Assis</span>
-          </h1>
-
-          <h2>Graduanda em Engenharia de Software</h2>
-
-          <p class="hero-description">
-            Estudante com interesse em tecnologia, programação e inovação,
-            buscando oportunidades para desenvolver habilidades na área de
-            Engenharia de Software. Sou responsável, proativa e tenho vontade
-            constante de aprender e evoluir profissionalmente.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-            <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+  <main id="conteudo">
+    <section id="inicio" class="hero content-width" aria-labelledby="nome">
+      <div class="hero-meta mono"><span>Um pouco de quem eu sou</span><span>Portfólio / 2026</span></div>
+      <div class="hero-body">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> Pessoas, ideias e tecnologia.</p>
+          <h1 id="nome">Isabella<br /><em>Assis.</em></h1>
+          <p class="hero-course">Graduanda em<br /><strong>Engenharia da Computação.</strong></p>
+          <p class="hero-description">Aprendo construindo. Entre programação, dados e projetos em equipe, busco criar tecnologia que faça sentido para as pessoas.</p>
+          <a class="text-link hero-link" href="#projetos">Explore meus projetos <span class="round-arrow" aria-hidden="true">↘</span></a>
+        </div>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img src="assets/foto-perfil.jpeg" alt="Isabella Assis, de braços cruzados" width="1023" height="1537" fetchpriority="high" />
+            <span class="portrait-note" aria-hidden="true">prazer, Isabella!</span>
           </div>
-        </div>
-
-        <div class="hero-image">
-          <img src="assets/foto-perfil.jpeg" alt="Foto de perfil de Isabella" />
-        </div>
+          <figcaption><span class="mono">Em formação, sempre.</span><span>Inteli · São Paulo</span></figcaption>
+        </figure>
       </div>
+      <div class="hero-bottom"><span class="mono">Curiosidade como ponto de partida.</span><a href="#projetos" aria-label="Continuar para os projetos">Continue explorando <span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section about">
-      <div class="container about-content">
-        <div class="section-title">
-          <span>Sobre mim</span>
-          <h2>Olá! Sou a Isabella.</h2>
+    <section id="projetos" class="section projects" aria-labelledby="titulo-projetos">
+      <div class="content-width">
+        <div class="section-heading">
+          <div><p class="section-index mono">01 / Projetos selecionados</p><h2 id="titulo-projetos">Aprender,<br /><em>fazendo.</em></h2></div>
+          <p class="section-intro">Desafios reais, trabalho em equipe e espaço para experimentar. Aqui estão alguns projetos que fazem parte da minha trajetória.</p>
         </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              Graduanda em Engenharia de Software no Inteli, tenho grande
-              interesse pela área de tecnologia e pelo desenvolvimento de
-              soluções digitais voltadas para problemas reais. Minha trajetória
-              é marcada pela dedicação aos estudos, pela busca constante por
-              aprendizado e pelo interesse em inovação e impacto social por meio
-              da tecnologia.
-            </p>
-
-            <p>
-              Ao longo da minha formação, venho desenvolvendo habilidades em
-              lógica, desenvolvimento de sistemas, trabalho em equipe e resolução
-              de problemas, sempre buscando unir criatividade e tecnologia na
-              construção de soluções eficientes. Além disso, sou uma pessoa
-              comunicativa, organizada e determinada, características que
-              fortalecem minha atuação em projetos acadêmicos e profissionais.
-            </p>
-
-            <p>
-              Guiada pelo propósito de crescer na área de tecnologia, direciono
-              meus estudos para o desenvolvimento de software e para a criação
-              de soluções que possam gerar impacto positivo na sociedade, unindo
-              inovação, acessibilidade e transformação digital.
-            </p>
-          </div>
-
-          <div class="about-card">
-            <h3>Atividades Extracurriculares</h3>
-
-            <div class="tag-list">
-              <span>Inteli Grace Hopper</span>
-              <span>Inteli Quantum</span>
-              <span>Inteli Turing</span>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-visual">
+              <span class="project-number mono" aria-hidden="true">01 /</span>
+              <img src="assets/projeto-cobasi.png" alt="Loja Cobasi, com a identidade visual da empresa" width="1225" height="692" loading="lazy" />
+              <span class="image-caption mono">Experiência digital</span>
             </div>
-
-            <p class="small-text">
-              Participação em atividades extracurriculares voltadas para
-              tecnologia, inovação, pesquisa, diversidade e desenvolvimento
-              acadêmico.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="section projects">
-      <div class="container">
-        <div class="section-title center">
-          <span>Projetos Acadêmicos</span>
-          <h2>O que já desenvolvi</h2>
-          <p>
-            Projetos desenvolvidos ao longo da minha trajetória, aplicando
-            tecnologia a desafios reais.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/projeto-cobasi.png" alt="Imagem do Projeto Cobasi" />
-            </div>
-
-            <div class="project-info">
-              <p class="project-company">Cobasi</p>
-              <h3>Projeto Cobasi</h3>
-              <span class="project-date">Projeto Acadêmico</span>
-
-              <p>
-                Desenvolvimento de uma solução digital voltada para melhorar a
-                experiência dos clientes da Cobasi, integrando tecnologia e
-                acessibilidade no atendimento e na organização de informações
-                relacionadas ao cuidado animal.
-              </p>
-
-              <details>
-                <summary>Ver detalhes</summary>
-
-                <p>
-                  <strong>Problema:</strong> Dificuldade na centralização de
-                  informações e na criação de uma experiência prática e eficiente
-                  para clientes que buscam serviços, produtos e acompanhamento
-                  relacionados aos cuidados com pets.
-                </p>
-
-                <p>
-                  <strong>Solução:</strong> Criação de uma plataforma digital
-                  com foco em organização, acessibilidade e praticidade,
-                  permitindo uma experiência mais intuitiva para os usuários e
-                  contribuindo para a otimização dos serviços oferecidos pela
-                  empresa.
-                </p>
+            <div class="project-content">
+              <p class="project-partner mono">Cobasi <span>· Projeto acadêmico</span></p>
+              <h3>Mais cuidado.<br /><em>Menos distância.</em></h3>
+              <p>Uma solução digital para aproximar clientes das informações e dos serviços relacionados ao cuidado animal, com foco em organização e acessibilidade.</p>
+              <ul class="project-tags" aria-label="Focos do projeto"><li>Experiência do usuário</li><li>Acessibilidade</li></ul>
+              <details class="project-details">
+                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+                <div class="details-body">
+                  <p><strong>O desafio</strong> Centralizar informações e criar uma experiência prática para quem busca serviços, produtos e acompanhamento para seus pets.</p>
+                  <p><strong>A solução</strong> Uma plataforma digital que organiza as informações e facilita o acesso aos serviços, tornando a experiência mais intuitiva para os usuários.</p>
+                </div>
               </details>
             </div>
           </article>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/projeto-defesa-civil.png" alt="Imagem do Projeto Defesa Civil" />
+          <article class="project project-reversed">
+            <div class="project-visual">
+              <span class="project-number mono" aria-hidden="true">02 /</span>
+              <img src="assets/projeto-defesa-civil.png" alt="Central de monitoramento e símbolo da Defesa Civil de Santo André" width="1247" height="681" loading="lazy" />
+              <span class="image-caption mono">Dados para agir</span>
             </div>
-
-            <div class="project-info">
-              <p class="project-company">Defesa Civil</p>
-              <h3>Projeto Defesa Civil</h3>
-              <span class="project-date">Projeto Acadêmico</span>
-
-              <p>
-                Desenvolvimento de uma aplicação web voltada para centralização
-                e monitoramento de dados da Defesa Civil, com foco em apoiar
-                ações preventivas e agilizar a tomada de decisões em situações
-                de risco.
-              </p>
-
-              <details>
-                <summary>Ver detalhes</summary>
-
-                <p>
-                  <strong>Problema:</strong> Dificuldade no acesso rápido e
-                  organizado às informações necessárias para monitoramento de
-                  ocorrências e gerenciamento de situações emergenciais,
-                  comprometendo a eficiência das ações realizadas.
-                </p>
-
-                <p>
-                  <strong>Solução:</strong> Criação de uma plataforma para
-                  centralização de dados e acompanhamento de informações em
-                  tempo real, facilitando a visualização de ocorrências, a
-                  comunicação entre equipes e a organização das ações preventivas
-                  e emergenciais.
-                </p>
+            <div class="project-content">
+              <p class="project-partner mono">Defesa Civil <span>· Projeto acadêmico</span></p>
+              <h3>Informação clara.<br /><em>Decisões melhores.</em></h3>
+              <p>Uma aplicação web para centralizar e acompanhar dados, apoiar ações preventivas e facilitar a tomada de decisões em situações de risco.</p>
+              <ul class="project-tags" aria-label="Focos do projeto"><li>Aplicação web</li><li>Visualização de dados</li></ul>
+              <details class="project-details">
+                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+                <div class="details-body">
+                  <p><strong>O desafio</strong> Acessar rapidamente as informações necessárias para monitorar ocorrências e gerenciar situações de emergência.</p>
+                  <p><strong>A solução</strong> Uma plataforma para centralizar dados e acompanhar informações em tempo real, facilitando a visualização de ocorrências e a comunicação entre equipes.</p>
+                </div>
               </details>
             </div>
           </article>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/projeto-fundacao-bb.png" alt="Imagem do Projeto Fundação Banco do Brasil" />
+          <article class="project">
+            <div class="project-visual project-visual-foundation">
+              <span class="project-number mono" aria-hidden="true">03 /</span>
+              <img src="assets/projeto-fundacao-bb.png" alt="Identidade visual da Fundação Banco do Brasil" width="621" height="365" loading="lazy" />
+              <span class="image-caption mono">Tecnologia com impacto social</span>
             </div>
-
-            <div class="project-info">
-              <p class="project-company">Fundação Banco do Brasil</p>
-              <h3>Projeto Fundação Banco do Brasil</h3>
-              <span class="project-date">Projeto Acadêmico</span>
-
-              <p>
-                Desenvolvimento e distribuição de Aquecedores Solares de Baixo
-                Custo para entidades beneficentes em situação de vulnerabilidade
-                socioeconômica, promovendo sustentabilidade e redução de custos
-                energéticos.
-              </p>
-
-              <details>
-                <summary>Ver detalhes</summary>
-
-                <p>
-                  <strong>Problema:</strong> Alto custo de energia elétrica em
-                  instituições de baixa renda, comprometendo recursos que
-                  poderiam ser direcionados para as atividades principais e para
-                  o atendimento das comunidades beneficiadas.
-                </p>
-
-                <p>
-                  <strong>Solução:</strong> Criação de equipamentos que utilizam
-                  mecanismos simples e materiais acessíveis para geração de
-                  energia solar térmica, reduzindo os gastos com energia elétrica
-                  e ampliando a autonomia financeira das entidades atendidas.
-                </p>
+            <div class="project-content">
+              <p class="project-partner mono">Fundação Banco do Brasil <span>· Projeto acadêmico</span></p>
+              <h3>Energia solar.<br /><em>Mais possibilidades.</em></h3>
+              <p>Aquecedores Solares de Baixo Custo para entidades beneficentes em situação de vulnerabilidade socioeconômica, unindo sustentabilidade e redução de custos energéticos.</p>
+              <ul class="project-tags" aria-label="Focos do projeto"><li>Sustentabilidade</li><li>Impacto social</li></ul>
+              <details class="project-details">
+                <summary>O desafio e a solução <span aria-hidden="true">+</span></summary>
+                <div class="details-body">
+                  <p><strong>O desafio</strong> Reduzir os gastos com energia elétrica de instituições de baixa renda, preservando recursos para o atendimento às comunidades.</p>
+                  <p><strong>A solução</strong> Desenvolver e distribuir equipamentos de energia solar térmica com mecanismos simples e materiais acessíveis, ampliando a autonomia financeira das entidades atendidas.</p>
+                </div>
               </details>
             </div>
           </article>
@@ -248,237 +123,58 @@
       </div>
     </section>
 
-    <!-- FORMAÇÃO -->
-    <section id="formacao" class="section education">
-      <div class="container">
-        <div class="section-title center">
-          <span>Formação & Certificações</span>
-          <h2>Trajetória Acadêmica</h2>
-          <p>Clique em cada item para ver mais detalhes.</p>
-        </div>
-
-        <div class="education-grid">
-          <div class="education-column">
-            <h3>Formação Acadêmica</h3>
-
-            <details class="education-item" open>
-              <summary>
-                <strong>Engenharia de Software</strong>
-                <span>Instituto de Tecnologia e Liderança - Inteli</span>
-              </summary>
-              <p>Jan 2026 - Atual</p>
-              <p>
-                Graduação voltada para o desenvolvimento de soluções digitais,
-                programação, lógica, inovação, projetos em equipe e resolução de
-                problemas reais por meio da tecnologia.
-              </p>
-            </details>
-
-            <details class="education-item">
-              <summary>
-                <strong>Ensino Médio</strong>
-                <span>Colégio Embraer Juarez Wanderley</span>
-              </summary>
-              <p>Jan 2023 - Dez 2025</p>
-              <p>
-                Formação acadêmica com foco em dedicação aos estudos,
-                desenvolvimento pessoal, participação em projetos e preparação
-                para a trajetória na área de tecnologia.
-              </p>
-            </details>
-          </div>
-
-          <div class="education-column">
-            <h3>Cursos & Certificações</h3>
-
-            <details class="education-item" open>
-              <summary>
-                <strong>Introdução à Computação Quântica</strong>
-                <span>TIC em Trilhas</span>
-              </summary>
-              <p>Abril 2026</p>
-              <p>
-                Curso introdutório voltado aos conceitos fundamentais de
-                computação quântica e tecnologias emergentes.
-              </p>
-            </details>
-
-            <details class="education-item">
-              <summary>
-                <strong>Matemática Sem Fronteiras - OIMSF</strong>
-                <span>Medalha de Diamante</span>
-              </summary>
-              <p>2025</p>
-              <p>
-                Reconhecimento pelo desempenho na Olimpíada Internacional
-                Matemática Sem Fronteiras.
-              </p>
-            </details>
-
-            <details class="education-item">
-              <summary>
-                <strong>Matemática Sem Fronteiras - OIMSF</strong>
-                <span>Medalha de Ouro</span>
-              </summary>
-              <p>2024</p>
-              <p>
-                Reconhecimento pelo desempenho na Olimpíada Internacional
-                Matemática Sem Fronteiras.
-              </p>
-            </details>
-
-            <details class="education-item">
-              <summary>
-                <strong>Matemática Sem Fronteiras - OIMSF</strong>
-                <span>Medalha de Prata</span>
-              </summary>
-              <p>2023</p>
-              <p>
-                Reconhecimento pelo desempenho na Olimpíada Internacional
-                Matemática Sem Fronteiras.
-              </p>
-            </details>
+    <section id="sobre" class="section about" aria-labelledby="titulo-sobre">
+      <div class="content-width about-layout">
+        <div class="about-heading"><p class="section-index mono">02 / Além dos projetos</p><h2 id="titulo-sobre">A pessoa<br /><em>por trás.</em></h2><span class="about-asterisk" aria-hidden="true">✳</span></div>
+        <div class="about-copy">
+          <p class="about-lead">Sou Isabella Cristhini Ferreira de Assis, estudante de <strong>Engenharia da Computação no Inteli</strong> e uma pessoa movida pela vontade de aprender.</p>
+          <p>Gosto de conectar ideias, entender problemas e construir soluções junto com outras pessoas. Na tecnologia, encontrei um espaço para unir raciocínio, criatividade e o desejo de gerar impacto positivo.</p>
+          <p>Minha formação acontece também na prática: em projetos, conversas e desafios que me ajudam a desenvolver lógica, comunicação e trabalho em equipe. Sou organizada, proativa e acredito que sempre existe algo novo para aprender.</p>
+          <div class="communities">
+            <h3 class="mono">Também faço parte</h3>
+            <ul><li>Inteli Grace Hopper</li><li>Inteli Turing</li></ul>
+            <p>Espaços de troca, diversidade, pesquisa e desenvolvimento dentro da tecnologia.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONHECIMENTOS -->
-    <section id="conhecimentos" class="section skills">
-      <div class="container">
-        <div class="section-title center">
-          <span>Conhecimentos</span>
-          <h2>Competências Técnicas</h2>
-          <p>
-            Habilidades desenvolvidas ao longo da trajetória acadêmica e em
-            projetos práticos.
-          </p>
+    <section id="formacao" class="section journey" aria-labelledby="titulo-percurso">
+      <div class="content-width">
+        <div class="section-heading"><div><p class="section-index mono">03 / Meu percurso</p><h2 id="titulo-percurso">Tudo começa<br /><em>com curiosidade.</em></h2></div><p class="section-intro">Os lugares e as experiências que vêm construindo meu jeito de pensar.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><p class="timeline-date mono">2026 — Atual<span class="timeline-dot" aria-hidden="true"></span></p><div><p class="timeline-institution mono">Instituto de Tecnologia e Liderança · Inteli</p><h3>Engenharia da Computação</h3><p>Graduação baseada em projetos, com foco em programação, desenvolvimento de sistemas, lógica, inovação e resolução de problemas reais.</p></div><span class="timeline-label mono">Em andamento</span></article>
+          <article class="timeline-item"><p class="timeline-date mono">2023 — 2025<span class="timeline-dot" aria-hidden="true"></span></p><div><p class="timeline-institution mono">Colégio Embraer Juarez Wanderley</p><h3>Ensino Médio</h3><p>Uma etapa de dedicação aos estudos, participação em projetos e preparação para seguir na área de tecnologia.</p></div><span class="timeline-label mono">Concluído</span></article>
         </div>
+        <div class="recognition"><div class="recognition-title"><span class="recognition-icon" aria-hidden="true">✧</span><h3>Matemática<br />Sem Fronteiras</h3><p>Olimpíada Internacional · OIMSF</p></div><ul class="award-list" aria-label="Medalhas na Olimpíada Internacional Matemática Sem Fronteiras"><li><span class="mono">2025</span><strong>Diamante</strong></li><li><span class="mono">2024</span><strong>Ouro</strong></li><li><span class="mono">2023</span><strong>Prata</strong></li></ul></div>
+      </div>
+    </section>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Web</h3>
-
-            <div class="skill">
-              <span>HTML & CSS</span>
-              <small>Avançado</small>
-            </div>
-
-            <div class="skill">
-              <span>JavaScript</span>
-              <small>Intermediário</small>
-            </div>
-
-            <div class="skill">
-              <span>Node.js</span>
-              <small>Básico</small>
-            </div>
-
-            <div class="skill">
-              <span>Phaser.js</span>
-              <small>Intermediário</small>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Dados & IA</h3>
-
-            <div class="skill">
-              <span>PostgreSQL</span>
-              <small>Básico</small>
-            </div>
-
-            <div class="skill">
-              <span>Python</span>
-              <small>Intermediário</small>
-            </div>
-
-            <div class="skill">
-              <span>Inteligência Artificial</span>
-              <small>Básico</small>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Tecnologias Emergentes</h3>
-
-            <div class="skill">
-              <span>Computação Quântica</span>
-              <small>Básico</small>
-            </div>
-
-            <div class="skill">
-              <span>Inovação</span>
-              <small>Intermediário</small>
-            </div>
-
-            <div class="skill">
-              <span>Transformação Digital</span>
-              <small>Básico</small>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Soft Skills & Idiomas</h3>
-
-            <div class="skill">
-              <span>Português</span>
-              <small>Nativo</small>
-            </div>
-
-            <div class="skill">
-              <span>Inglês</span>
-              <small>Básico</small>
-            </div>
-
-            <div class="skill">
-              <span>Comunicação</span>
-              <small>Intermediário</small>
-            </div>
-
-            <div class="skill">
-              <span>Organização</span>
-              <small>Avançado</small>
-            </div>
-
-            <div class="skill">
-              <span>Resolução de Problemas</span>
-              <small>Intermediário</small>
-            </div>
-          </div>
+    <section id="conhecimentos" class="section toolkit" aria-labelledby="titulo-repertorio">
+      <div class="content-width">
+        <div class="section-heading"><div><p class="section-index mono">04 / Em constante aprendizado</p><h2 id="titulo-repertorio">Meu<br /><em>repertório.</em></h2></div><p class="section-intro">Ferramentas e habilidades que desenvolvo durante a graduação e nos projetos.</p></div>
+        <div class="skill-groups">
+          <div class="skill-group"><h3><span class="mono">01</span> Desenvolvimento</h3><ul><li><span>HTML &amp; CSS</span><small>Avançado</small></li><li><span>JavaScript</span><small>Intermediário</small></li><li><span>Node.js</span><small>Básico</small></li><li><span>Phaser.js</span><small>Intermediário</small></li></ul></div>
+          <div class="skill-group"><h3><span class="mono">02</span> Dados &amp; IA</h3><ul><li><span>Python</span><small>Intermediário</small></li><li><span>PostgreSQL</span><small>Básico</small></li><li><span>Inteligência Artificial</span><small>Básico</small></li></ul></div>
+          <div class="skill-group"><h3><span class="mono">03</span> Colaboração &amp; criação</h3><ul><li><span>Comunicação</span><small>Intermediário</small></li><li><span>Organização</span><small>Avançado</small></li><li><span>Resolução de problemas</span><small>Intermediário</small></li><li><span>Inovação</span><small>Intermediário</small></li><li><span>Transformação digital</span><small>Básico</small></li></ul></div>
+          <div class="skill-group"><h3><span class="mono">04</span> Idiomas</h3><ul><li><span>Português</span><small>Nativo</small></li><li><span>Inglês</span><small>Básico</small></li></ul></div>
         </div>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section contact">
-      <div class="container contact-content">
-        <div class="section-title center">
-          <span>Contato</span>
-          <h2>Vamos conversar?</h2>
-          <p>
-            Estou aberta a oportunidades, projetos e colaborações.
-            Sinta-se à vontade para entrar em contato!
-          </p>
+    <section id="contato" class="section contact" aria-labelledby="titulo-contato">
+      <div class="content-width">
+        <p class="section-index mono">Uma conversa pode ser o começo.</p>
+        <div class="contact-heading"><h2 id="titulo-contato">Vamos criar<br /><em>algo juntos?</em></h2><span class="contact-arrow" aria-hidden="true">↗</span></div>
+        <p class="contact-intro">Estou aberta a oportunidades, projetos e novas conexões. Me conta o que você tem em mente.</p>
+        <div class="contact-links">
+          <div class="contact-row"><a href="mailto:isabellacristhini57@gmail.com"><span class="mono contact-label">E-mail</span><span class="contact-address">isabellacristhini57@gmail.com</span><span aria-hidden="true">↗</span></a><button class="copy-email" type="button" hidden>Copiar e-mail</button></div>
+          <div class="contact-row"><a href="https://www.linkedin.com/in/isabellaaassis" target="_blank" rel="noopener noreferrer"><span class="mono contact-label">LinkedIn</span><span class="contact-address">Vamos nos conectar</span><span aria-hidden="true">↗</span></a></div>
         </div>
-
-        <div class="contact-cards">
-          <a href="mailto:isabellacristhini57@gmail.com" class="contact-card">
-            <h3>E-mail</h3>
-            <p>isabellacristhini57@gmail.com</p>
-          </a>
-
-          <a href="https://www.linkedin.com/in/isabellaaassis" target="_blank" class="contact-card">
-            <h3>LinkedIn</h3>
-            <p>linkedin.com/in/isabellaaassis</p>
-          </a>
-        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+        <footer class="footer"><p>© 2026 Isabella Cristhini Ferreira de Assis</p><a href="#inicio">De volta ao começo <span aria-hidden="true">↑</span></a></footer>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <p>© 2026 Isabella Cristhini Ferreira de Assis. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
