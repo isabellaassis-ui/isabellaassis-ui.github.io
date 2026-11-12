@@ -99,7 +99,7 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 .education-institution { color: var(--muted); font-size: 14px; margin-top: 6px; }
 .education-program { color: white; font-size: 16px; font-weight: 700; margin-top: 18px; }
 .education-description { margin-top: 12px; color: var(--muted); font-size: 15px; }
-.hackathon-recognition { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 35px; align-items: center; padding: 24px; background: var(--surface-deep); color: var(--ink); border-radius: 18px; margin-top: 28px; }
+.hackathon-recognition { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px 35px; align-items: center; padding: 24px; background: var(--surface-deep); color: var(--ink); border: 1px solid var(--line); border-radius: 18px; margin-top: 28px; }
 .hackathon-photo img { width: 100%; height: auto; border-radius: 11px; }
 .hackathon-copy { min-width: 0; padding: 5px 10px 5px 0; }
 .achievement-label { font-size: 13px; color: var(--muted); font-weight: 600; margin-bottom: 10px; }
@@ -107,12 +107,21 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 .hackathon-place span { font-family: var(--sans); font-size: 21px; font-weight: 500; letter-spacing: -.02em; }
 .hackathon-copy h3 { font-family: var(--display); font-size: 27px; line-height: 1.15; font-weight: 700; margin-top: 12px; letter-spacing: -.035em; }
 .hackathon-copy > p:last-child { color: var(--muted); margin-top: 15px; font-size: 15px; }
+.hackathon-details { grid-column: 1 / -1; min-width: 0; border-top: 1px solid var(--subtle); }
+.hackathon-details summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 58px; padding: 14px 4px; color: var(--ink); font-size: 14px; font-weight: 700; cursor: pointer; list-style: none; }
+.hackathon-details summary::-webkit-details-marker { display: none; }
+.hackathon-details summary:hover { color: var(--accent-hover); }
+.hackathon-details summary > span { flex-shrink: 0; color: var(--accent-hover); font-size: 26px; line-height: 1; transition: transform .2s; }
+.hackathon-details[open] summary > span { transform: rotate(45deg); }
+.hackathon-story { max-width: 760px; margin-inline: auto; padding: 12px 4px 8px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+.hackathon-story h4 { margin: 0 0 22px; font-family: var(--display); font-size: clamp(24px, 3vw, 32px); line-height: 1.2; letter-spacing: -.025em; color: var(--ink); }
+.hackathon-story p + p { margin-top: 20px; }
 .recognition { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 30px; border-radius: 14px; background: var(--surface-deep); color: var(--ink); border: 1px solid var(--line); margin-top: 24px; }
 .recognition-title .section-label { font-size: 12px; margin-bottom: 6px; }
 .recognition-title h3 { font-family: var(--display); font-weight: 700; font-size: 23px; line-height: 1.2; letter-spacing: -.03em; }
 .recognition-title > p:last-child { color: var(--muted); font-size: 13px; margin-top: 8px; }
-.award-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.award-list li { background: var(--accent-soft); padding: 13px 18px; border-radius: 10px; border-top: 3px solid var(--accent); }
+.award-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: min(100%, 360px); flex-shrink: 0; }
+.award-list li { display: flex; flex-direction: column; justify-content: center; min-width: 0; min-height: 100px; background: #421b20; padding: 14px 16px; border: 1px solid var(--subtle); border-radius: 10px; border-top: 4px solid var(--accent); }
 .award-list li:nth-child(2) { border-top-color: var(--accent-hover); }
 .award-list li:nth-child(3) { border-top-color: var(--muted); }
 .award-list span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
@@ -286,7 +295,7 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
   .recognition { display: block; padding: 24px 20px; }
   .recognition-title h3 { font-size: 23px; }
   .award-list { margin-top: 22px; gap: 8px; }
-  .award-list li { padding: 10px; }
+  .award-list li { padding: 12px 8px; min-height: 88px; }
   .award-list strong { font-size: 13px; }
   .award-list span { font-size: 11px; }
   .project-instruction { font-size: 13px; }
