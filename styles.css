@@ -103,9 +103,9 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 .recognition-title h3 { font-family: var(--display); font-weight: 700; font-size: 23px; line-height: 1.2; letter-spacing: -.03em; }
 .recognition-title > p:last-child { color: var(--muted); font-size: 13px; margin-top: 8px; }
 .award-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.award-list li { background: var(--accent-soft); padding: 13px 18px; border-radius: 10px; }
-.award-list li:nth-child(2) { background: var(--accent-soft); box-shadow: inset 0 3px var(--accent-hover); }
-.award-list li:nth-child(3) { background: var(--accent-soft); box-shadow: inset 0 3px var(--muted); }
+.award-list li { background: var(--accent-soft); padding: 13px 18px; border-radius: 10px; border-top: 3px solid var(--accent); }
+.award-list li:nth-child(2) { border-top-color: var(--accent-hover); }
+.award-list li:nth-child(3) { border-top-color: var(--muted); }
 .award-list span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
 .award-list strong { font-size: 16px; font-weight: 700; }
 
@@ -132,11 +132,9 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
 .project-visual { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 .project-visual > img { width: 100%; height: auto; aspect-ratio: 1.3; object-fit: cover; }
 .project-visual-ldc > img { object-fit: contain; background: var(--surface-deep); padding: 15px; }
+.project-visual.project-visual-delicias > img { aspect-ratio: 885 / 880; max-height: 300px; object-fit: contain; background: #fff; }
 .project-visual-fundacao > img { object-fit: contain; background: #ffe500; padding: 13px; }
 .project-visual figcaption { padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.5; }
-.delicias-cover { min-height: 205px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 22px; background: var(--accent); color: var(--canvas); }
-.delicias-cover span { font-size: 10px; }
-.delicias-cover strong { font-family: var(--display); font-size: 36px; line-height: 1; letter-spacing: -.045em; }
 .project-content { min-width: 0; }
 .project-content h3 { font-family: var(--display); font-size: clamp(25px, 2.25vw, 32px); font-weight: 700; line-height: 1.17; letter-spacing: -.04em; }
 .project-intro { margin-top: 16px; color: var(--muted); font-size: 15px; }
@@ -195,8 +193,6 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
   .section-heading > p { max-width: 300px; }
   .project-layout { grid-template-columns: 1fr; gap: 24px; }
   .project-visual > img { aspect-ratio: 2.6; max-height: 210px; }
-  .delicias-cover { min-height: 180px; }
-  .delicias-cover strong { font-size: 42px; }
   .project-visual figcaption { padding-block: 10px; }
   .recognition { flex-wrap: wrap; }
 }
@@ -290,8 +286,6 @@ h1 span { display: inline-block; color: var(--accent); background: transparent; 
   .project-category { font-size: 10px; }
   .project-layout { grid-template-columns: 1fr; gap: 22px; }
   .project-visual > img { aspect-ratio: 2.1; max-height: 185px; }
-  .delicias-cover { min-height: 185px; padding: 22px; }
-  .delicias-cover strong { font-size: 43px; }
   .project-content h3 { font-size: 27px; }
   .project-intro { font-size: 15px; }
   .project-facts dd { font-size: 14px; }
