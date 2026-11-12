@@ -59,7 +59,7 @@ h1 em { display: inline-block; color: var(--accent); letter-spacing: -.05em; lin
 .portrait { position: relative; margin-top: 18px; max-width: 340px; width: 100%; justify-self: end; }
 .portrait-frame { position: relative; padding: 10px; background: var(--paper); transform: rotate(3deg); }
 .portrait-frame::before { content: ""; position: absolute; inset: 14px -12px -12px 14px; border: 1px solid #55544d; transform: rotate(-6deg); z-index: -1; }
-.portrait-frame img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 28%; filter: grayscale(100%); }
+.portrait-frame img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 28%; }
 .portrait-note { display: block; padding: 14px 9px 5px; color: var(--ink); font-family: var(--serif); font-size: 23px; font-style: italic; }
 .portrait figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px 12px; margin: 32px 4px 0; color: var(--muted); font-size: 10px; }
 .portrait figcaption .mono { font-size: 8px; }
@@ -86,6 +86,14 @@ h2 em { letter-spacing: -.035em; }
 .project-visual-foundation .project-number { top: -29px; }
 .image-caption { display: block; padding-top: 13px; color: var(--muted); font-size: 8px; }
 .project-visual-foundation .image-caption { position: absolute; top: 100%; left: 0; }
+.project-visual-ldc { background: #07516c; margin-top: 29px; padding: 28px; aspect-ratio: 1.45; display: grid; align-items: center; }
+.project-visual-ldc > img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
+.project-visual-ldc .project-number { top: -29px; }
+.project-visual-ldc .image-caption { position: absolute; top: 100%; left: 0; }
+.delicias-cover { min-width: 0; aspect-ratio: 1.45; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; background: #efdfd0; color: #813e32; }
+.delicias-cover > .mono { font-size: 8px; }
+.delicias-cover > p { font-family: var(--serif); font-size: clamp(36px, 4vw, 64px); line-height: .95; letter-spacing: -.045em; }
+.delicias-cover-services { display: flex; flex-wrap: wrap; gap: 10px 24px; padding-top: 14px; border-top: 1px solid #bb9987; font-size: 9px; }
 .project-content { padding-top: 27px; }
 .project-partner { color: var(--accent); font-size: 9px; letter-spacing: .035em; margin-bottom: 17px; }
 .project-partner span { color: var(--muted); white-space: nowrap; }
@@ -128,6 +136,16 @@ h2 em { letter-spacing: -.035em; }
 .timeline-item h3 { font-size: 20px; font-weight: 500; letter-spacing: -.035em; line-height: 1.45; }
 .timeline-item div > p:last-child { max-width: 510px; font-size: 12px; color: var(--muted); margin-top: 12px; }
 .timeline-label { color: var(--accent); font-size: 8px; padding-top: 3px; white-space: nowrap; }
+.hackathon-recognition { margin-top: 45px; border: 1px solid var(--line); background: var(--bg); display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: 32px; }
+.hackathon-photo { min-width: 0; }
+.hackathon-photo img { width: 100%; height: auto; }
+.hackathon-photo figcaption { color: var(--muted); padding: 14px 20px; font-size: 8px; }
+.hackathon-copy { min-width: 0; padding: 28px 28px 28px 0; }
+.hackathon-copy .section-index { font-size: 8px; margin-bottom: 18px; }
+.hackathon-place { color: var(--accent); font-family: var(--serif); font-size: 68px; line-height: 1; letter-spacing: -.055em; }
+.hackathon-place span { font-size: 10px; letter-spacing: .08em; }
+.hackathon-copy h3 { font-size: 25px; font-weight: 500; letter-spacing: -.035em; line-height: 1.15; margin-top: 16px; }
+.hackathon-copy > p:last-child { color: var(--muted); font-size: 12px; margin-top: 18px; }
 .recognition { margin-top: 45px; padding: 32px; border: 1px solid #4a4942; display: flex; gap: 25px; align-items: center; justify-content: space-between; }
 .recognition-title { position: relative; padding-left: 42px; }
 .recognition-icon { position: absolute; left: 0; top: -6px; font-size: 36px; color: var(--accent); line-height: 1.3; }
@@ -254,6 +272,10 @@ h2 em { letter-spacing: -.035em; }
   .project h3 { font-size: 32px; margin-bottom: 16px; }
   .project-visual-foundation { aspect-ratio: 1.55; margin-bottom: 23px; padding: 35px; }
   .project-visual-foundation > img { aspect-ratio: auto; }
+  .project-visual-ldc { aspect-ratio: 1.55; margin-bottom: 23px; padding: 28px; }
+  .project-visual-ldc > img { aspect-ratio: auto; }
+  .delicias-cover { aspect-ratio: 1.55; padding: 24px; gap: 14px; }
+  .delicias-cover-services { font-size: 8px; padding-top: 11px; gap: 10px 20px; }
   .project-details { margin-top: 18px; }
   .project-details summary { min-height: 48px; }
   .about-layout { grid-template-columns: 1fr; gap: 28px; }
@@ -265,6 +287,9 @@ h2 em { letter-spacing: -.035em; }
   .timeline-date { padding-left: 15px; }
   .timeline-dot { right: auto; left: 0; }
   .timeline-item h3 { font-size: 21px; }
+  .hackathon-recognition { grid-template-columns: 1fr; gap: 0; margin-top: 32px; }
+  .hackathon-copy { padding: 12px 24px 28px; }
+  .hackathon-place { font-size: 60px; }
   .recognition { margin-top: 32px; display: block; padding: 25px 20px; }
   .recognition-title h3 br { display: none; }
   .recognition-title h3 { font-size: 17px; }
