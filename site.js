@@ -34,7 +34,7 @@ window.addEventListener('resize', queueNavigationUpdate);
 window.addEventListener('load', updateNavigation);
 updateNavigation();
 
-// All five project cases stay readable when JavaScript is unavailable.
+// All project cases stay readable when JavaScript is unavailable.
 const projectTabs = document.querySelector('.project-tabs');
 const projectButtons = [...document.querySelectorAll('[data-project]')];
 const projectPanels = [...document.querySelectorAll('[data-project-panel]')];
